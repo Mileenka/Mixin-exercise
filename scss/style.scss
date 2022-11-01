@@ -1,0 +1,29 @@
+@use "mixin" as *;
+
+* {
+    margin: 0;
+}
+
+body {
+    @include flex-center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    @include flex-center;
+    width: 15rem;
+    height: 15rem;
+    @include border;
+    border-radius: 10rem;
+    p {
+        @include flex-center;
+        width: 10.5rem;
+        height: 10.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 0.2rem;
+        @include border(rgb(156, 27, 128));
+    }
+}
